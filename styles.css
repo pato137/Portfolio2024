@@ -80,10 +80,10 @@ section {
 
 /* Estilos para cada sección */
 #inicio {
-  /* background-color: #3498db;*/
+   background-color: #3498db;
 
   /* Azul */
-  background-image: url("img/MediumHeader.jpg");
+ /* background-image: url("img/MediumHeader.jpg");*/
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
