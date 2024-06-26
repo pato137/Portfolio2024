@@ -224,17 +224,20 @@ article:hover {
 
 
 /* Estilos para cada sección */
-/* #inicio {
-   background-color: #3498db;
+#inicio {
+  /* background-color: #3498db;*/
 
-   Azul 
+  /* Azul */
   background-image: url("img/MediumHeader.jpg");
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: cover;  
   width: 100%;
-   position: relative; 
-  flex-direction: column;} */
+  /* position: relative; */
+  flex-direction: column;
+
+}
+
 
 #proyectos {
 
