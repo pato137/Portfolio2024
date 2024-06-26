@@ -11,56 +11,88 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/8273e4b325.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
 </head>
 
 <body>
   <nav id="menu">
     <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#acerca">Acerca de</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#inicio" class="a-inicio">Inicio</a></li>
+      <li><a href="#experiencia" class="a-experiencia">Experiencia</a></li>
+      <li><a href="#proyectos"class="a-proyecto">Proyectos</a></li>
+      <li><a href="#acerca" class="a-acerca">Acerca de</a></li>
+      <li><a href="#habilidades" class="a-habilidades">Habilidades</a></li>
+      <li><a href="#contacto" class="a-contacto">Contacto</a></li>
+      
     </ul>
   </nav>
 
   <section id="inicio">
-    <h1>Bienvenido a mi Portfolio</h1>
+    <h1><i class="fa-solid fa-"></i>Bienvenido a mi  <span class="titulo-1">Portfolio</span> </h1>
     <p>¡Aquí encontrarás mis proyectos y habilidades!</p>
+  </section>
+  <section id="experiencia">
+    <h2>Mi <span class="titulo-2">Experiencia</span></h2>
+    <p>¡Hola! Soy SERGIO, un apasionado Desarrollador Web con experiencia en Backend.</p>
   </section>
 
   <section id="proyectos">
-    <h2>Mis Proyectos</h2>
+    <h2>Mis <span class="titulo-3">Proyectos</span> </h2>
     <p>Aquí puedes ver algunos de los proyectos en los que he trabajado:</p>
+    <div class="grid-container">
+
+      <div class="grid-item">
+       <article class="item"> Proyecto 1 - Sorteo -</article>
+      </div>
+      <div class="grid-item">
+        <article class="item"> Proyecto 2 - transporte Caba -</article>
+      </div>
+      <div class="grid-item">
+       <article class="item"> Proyecto 3 - Aguas Rogers -</article>
+      </div>
+      <div class="grid-item">
+       <article class="item"> Proyecto 4 -Turnos-  </article>
+      </div>
+      <div class="grid-item">
+      <article class="item">  Proyecto 5 -Taller- </article> 
+      </div>
+      <div class="grid-item">
+       <article class="item"> Proyecto 6 -App Alquiler- </article>   
+      </div>
+    </div>
+
     <!-- Agrega tus proyectos aquí -->
   </section>
 
   <section id="acerca">
-    <h2>Acerca de Mí</h2>
+    <h2>Acerca de <span class="titulo-4">mi</span></h2>
     <p>¡Hola! Soy SERGIO, un apasionado Desarrollador Web con experiencia en Backend.</p>
   </section>
 
   <section id="habilidades">
-    <h2>Mis Habilidades</h2>
-    <ul>
-      <li>Java</li>
-      <li>SpringBoot</li>
-      <li>Base de Datos</li>
-      <li>Html</li>
-      <li>Css</li>
-      <li>Git</li>
+    <h2>Mis <span class="titulo-5"> Habilidades</span></h2>
+    <ul class="skills">
+      <li><i class="fab fa-java"></i> Java</li>
+      <li><i class="fas fa-leaf"></i> SpringBoot</li>
+      <li><i class="fas fa-database"></i> Base de Datos</li>
+      <li><i class="fab fa-html5"></i> Html</li>
+      <li><i class="fab fa-css3-alt"></i> Css</li>
+      <li><i class="fab fa-git"></i> Git</li>
     </ul>
     
   </section>
 
   <section id="contacto">
-    <h2>Contacto</h2>
+    <h2> <span class="titulo-6"> Contacto</span> </h2>
     <p>Puedes contactarme a través de:</p>
     <!-- Agrega tus datos de contacto aquí -->
     <i class="fa-regular fa-envelope"></i>
   </section>
 
   <script src="script.js"></script>
+
 </body>
 
 </html>

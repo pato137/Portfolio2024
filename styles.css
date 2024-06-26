@@ -18,7 +18,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #222;
   padding: 10px 0;
 }
 
@@ -32,6 +32,7 @@ body {
 #menu ul li {
   display: inline;
   margin-right: 20px;
+  
 }
 
 #menu ul li a {
@@ -39,7 +40,31 @@ body {
   color: #fff;
 }
 
-/*-------------------*/
+/*  ---------------------  BOTONES DEL MENU --------------- */
+
+#menu ul li .a-inicio:hover{
+  color: #3498db;
+
+}
+#menu ul li .a-experiencia:hover{
+  color: #d912f3;
+}
+#menu ul li .a-proyecto:hover{
+  color: #1df06e;
+}
+
+#menu ul li .a-acerca:hover{
+  color:  #e74c3c;
+
+}
+#menu ul li .a-habilidades:hover{
+  color: #7a59b6;
+}
+#menu ul li .a-contacto:hover{
+  color: #f39c12;
+}
+/*---------------
+----*/
 /* Estilos para la navegación */
 /* 
 nav {
@@ -69,58 +94,176 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;  
   text-align: center;
   color: #fff;
+  background-color: #222;
   font-size: 24px;
   padding: 0.5rem;
 
 }
 
+/*#3498db
+#1df06e 
+ #e74c3c
+#9b59b6
+#f39c12*/
+span{
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.titulo-1{
+  background-color: #3498db;
+ }
+ .titulo-2 {
+  background-color: #d912f3;
+ }
+ .titulo-3{
+  background-color: #1df06e ;
+ }
+ .titulo-4{
+  background-color:  #e74c3c;
+ }
+ .titulo-5{
+  background-color: #9b59b6;
+ }
+ .titulo-6{
+  background-color: #f39c12;
+ }
+
+
+/* Estilos para la grilla de proyectos */
+/* Estilos para la grilla de proyectos */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  gap: 100px; /* Espacio entre los elementos */
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px; /* Ancho máximo para la grilla */
+}
+
+.grid-item {
+  background-color: #e6e0e0;
+  color: #333;
+  padding: 0px;
+  height: 250px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.item{
+  height: 70%;
+  background-color: #3498db;
+  border-radius: 0 90px 0 0 ;
+  animation-duration: 0.5s;
+}
+/* .grid-item:hover {
+  transform: scale(1.05);
+} */
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+  }
+}
+
+
+/*=======================================================================*/
 /* Estilos adicionales según tus preferencias */
 
-/* Estilos para cada sección */
-#inicio {
-  /* background-color: #3498db;*/
+/*------- GRID DE PRODUCTOS---------*/
 
-  /* Azul */
+/* #titulo{
+  text-shadow: 10px 10px 10px #111;
+  margin: 2rem ; 
+  font-size: 2rem;
+  letter-spacing: 3px;
+} */
+
+.container {
+  display: flex;
+  background-color: #fff;
+  padding: 2px;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+article {
+  box-shadow: 5px 5px 5px grey;
+  flex: 25%;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  margin: 2%;
+  border-radius: 0 80px;
+  background-color: #fff;
+}
+img {
+  width: 100%;
+}
+
+article:hover {
+    box-shadow: none;
+    transform: translate( 5px,5px );
+    transition: all 500ms;
+   
+    
+}
+
+
+
+/* Estilos para cada sección */
+/* #inicio {
+   background-color: #3498db;
+
+   Azul 
   background-image: url("img/MediumHeader.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   width: 100%;
-  /* position: relative; */
-  flex-direction: column;
-
-}
-
+   position: relative; 
+  flex-direction: column;} */
 
 #proyectos {
 
-  background-color: #2ecc71;
-  background-color: #212121;
+  /* background-color: #2ecc71; */
+  /* background-color: #fff;  */
   /* Verde */
 }
 
 #acerca {
-
+/* 
   background-color: #e74c3c;
-  background-color: #000;
+  background-color: #000; */
   /* Rojo */
 
 }
 
+
 #habilidades {
 
-  background-color: #9b59b6;
-  background-color: #212121;
+  /* background-color: #9b59b6;
+  background-color: #212121; */
   /* Púrpura */
 
 }
 
 #contacto {
 
-  background-color: #f39c12;
-  background-color: #212121;
+  /* background-color: #f39c12;
+  background-color: #212121; */
   /* Naranja */
 
 }
